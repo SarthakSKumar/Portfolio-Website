@@ -1,3 +1,6 @@
+import PageButton from "@/components/PageButton";
+import SocialLink from "@/components/SocialLink";
+
 export default function Home() {
   return (
     <>
@@ -12,18 +15,24 @@ export default function Home() {
           <h3 className="tagline">Full Stack Engineer</h3>
         </div>
         <div className="links">
-          <a className="social-link" href="https://github.com/sarthakskumar">
-            Github
-          </a>
-          <a
-            className="social-link"
-            href="https://linkedin.com/in/sarthakskumar"
-          >
-            Linkedin
-          </a>
-          <a className="social-link" href="https://instagram.com/sarthakskumar">
-            Instagram
-          </a>
+          <SocialLink href="https://github.com/sarthakskumar" text="Github" />
+          <SocialLink
+            href="https://www.linkedin.com/in/sarthakskumar/"
+            text="LinkedIn"
+          />
+          <SocialLink
+            href="https://instagram.com/sarthakskumar"
+            text="Instagram"
+          />
+        </div>
+        <div className="pagebutton-container">
+          <PageButton text="About me" href="/about" title="View About Me" />
+          <PageButton
+            text="My Projects"
+            href="/projects"
+            title="View My Projects"
+          />
+          <PageButton text="My Blog" href="/blog" title="View My Blog" />
         </div>
       </div>
     </>
